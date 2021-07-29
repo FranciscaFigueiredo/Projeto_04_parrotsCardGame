@@ -33,5 +33,14 @@ header {
 
     background-color: #A7E9AF;
     border-radius: 5px;
+
     margin: 10px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    height: 100px;
 }
