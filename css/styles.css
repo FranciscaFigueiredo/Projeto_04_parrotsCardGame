@@ -1,0 +1,37 @@
+body {
+    background-color: #EEF9BF;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 143px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    font-size: 56px;
+    color: #75B79E;
+}
+
+.container {
+    width: 80vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+}
+
+.card {
+    width: 117px;
+    height: 146px;
+
+    background-color: #A7E9AF;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
