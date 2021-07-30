@@ -39,8 +39,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding: 5px;
+    overflow: hidden;
 }
 
-.card img {
-    height: 100px;
+.container img:nth-child(1) {
+    width: 80px;
+    opacity: 1;
+}
+
+.container img:nth-child(2) {
+    width: 80px;
+    opacity: 0;
+}
+
+.carta-virada {
+
 }
