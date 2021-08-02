@@ -55,5 +55,16 @@ header {
 }
 
 .carta-virada {
+    display: none;
+}
 
+.selecionada {
+    display: block;
+}
+.esconder {
+    display: none;
+}
+
+.primeira-virada img:nth-child(1) {
+    opacity: 1;
 }
