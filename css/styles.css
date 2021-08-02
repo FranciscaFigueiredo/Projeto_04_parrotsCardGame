@@ -6,6 +6,7 @@ body {
 header {
     height: 143px;
 
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,30 +42,105 @@ header {
     justify-content: center;
 
     padding: 5px;
-    overflow: hidden;
+    
+    position: relative;
 }
 
-.container img:nth-child(1) {
+.container .card .front {
     width: 80px;
-    opacity: 1;
+    backface-visibility: hidden;
+    position: absolute;
 }
 
-.container img:nth-child(2) {
-    width: 80px;
+.carta-virada img{
+    width: 0;
     opacity: 0;
+    transform: rotateY(180deg);
+    position: absolute;
 }
-
-.carta-virada {
-    display: none;
+img {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
 }
 
 .selecionada {
-    display: block;
-}
-.esconder {
-    display: none;
+    width: 117px;
+    height: 146px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.primeira-virada img:nth-child(1) {
-    opacity: 1;
+.selecionada {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.primeira img {
+    width: 80px;
+
+    opacity: 1;
+    transition: all .5s linear;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    
+    transform: rotateY(0deg);
+}
+
+.segunda img {
+    width: 80px;
+
+    opacity: 1;
+    transition: all .5s linear;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    
+    transform: rotateY(0deg);
+}
+
+.esconder {
+    width: 0;
+    opacity: 0;
+
+    transition: all .5s linear ;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+}
+
+/* .primeira-virada img:nth-child(1) {
+    opacity: 1;
+} */
+
+/* .front {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+  }
+
+  .back-face {
+    transform: rotateY(180deg);
+  }
+
+  .card:hover .back-face {
+    transform: rotateY(0deg);
+  }
+
+  .card:hover .front-face {
+    transform: rotateY(-180deg);
+  } */
